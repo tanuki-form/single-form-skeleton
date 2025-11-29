@@ -28,12 +28,12 @@ function view($viewName, $data = []){
 }
 
 function formRoute(Form $form){
-  if($_SERVER['REQUEST_METHOD'] === 'POST') {
+  if($_SERVER["REQUEST_METHOD"] === "POST") {
     $form->bind($_POST);
     $binder = new FormTagBinder($form->getRawData());
 
-    switch($_POST['action'] ?? null){
-      case 'confirm':
+    switch($_POST["action"] ?? null){
+      case "confirm":
         if($form->validate()){
           view("confirm", ["form" => $form, "binder" => $binder]);
         }else{
@@ -41,7 +41,7 @@ function formRoute(Form $form){
         }
         break;
 
-      case 'send':
+      case "send":
         if($form->validate()){
           $result = $form->send();
 
@@ -55,7 +55,7 @@ function formRoute(Form $form){
         }
         break;
 
-      case 'back':
+      case "back":
         view("input", ["form" => $form, "binder" => $binder]);
         break;
     }

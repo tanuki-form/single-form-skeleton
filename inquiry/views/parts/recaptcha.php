@@ -1,5 +1,5 @@
 <?php
-$recaptchaOptions = getOptions("pre-handlers");
+$recaptchaOptions = getOptions("pre-handlers/recaptcha");
 $siteKey = $options["config"]["siteKey"];
 ?>
 

@@ -15,7 +15,7 @@ $siteKey = $options["config"]["siteKey"];
 
       const tokenInput = document.createElement("input")
       tokenInput.type = "hidden";
-      tokenInput.name = "recaptchaToken";
+      tokenInput.name = "recaptcha-token";
       tokenInput.value = token;
       form.append(tokenInput);
 

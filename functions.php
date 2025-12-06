@@ -18,7 +18,7 @@ function getErrorMessage(string $type, string $fieldLabel = ""){
   }
 }
 
-function getOptions($name){
+function getConfig($name="config"){
   return include __DIR__ . "/config/{$name}.php";
 }
 

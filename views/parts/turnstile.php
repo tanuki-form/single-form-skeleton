@@ -1,5 +1,5 @@
 <?php
-$turnstileOptions = getOptions("pre-handlers/turnstile");
+$turnstileOptions = getConfig("pre-handlers/turnstile");
 $siteKey = $turnstileOptions["config"]["siteKey"];
 ?>
 

@@ -1,6 +1,5 @@
 <?php
-$recaptchaOptions = getConfig("pre-handlers/recaptcha");
-$siteKey = $options["config"]["siteKey"];
+$siteKey = $form->helper->getRecaptchaSiteKey();
 ?>
 
 <script src="https://www.google.com/recaptcha/enterprise.js?render=<?php echo $siteKey; ?>"></script>

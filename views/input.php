@@ -86,6 +86,7 @@ $errors = $form->getValidationErrors();
       </div>
     </dl>
 
+    <input type="hidden" name="csrf-token" value="<?php echo $form->helper->getCsrfToken(); ?>">
     <button type="submit" name="action" value="confirm">確認</button>
   </form>
 </body>

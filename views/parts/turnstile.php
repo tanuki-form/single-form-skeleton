@@ -1,6 +1,5 @@
 <?php
-$turnstileOptions = getConfig("pre-handlers/turnstile");
-$siteKey = $turnstileOptions["config"]["siteKey"];
+$siteKey = $form->helper->getTurnstileSiteKey();
 ?>
 
 <script>

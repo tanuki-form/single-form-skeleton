@@ -40,7 +40,7 @@ $data = $form->getRawData();
     <button type="submit" name="action" value="send">送信</button>
   </form>
 
-  <?php //view("parts/recaptcha"); ?>
-  <?php //view("parts/turnstile"); ?>
+  <?php //view("parts/recaptcha", ["form" => $form]); ?>
+  <?php //view("parts/turnstile", ["form" => $form]); ?>
 </body>
 </html>

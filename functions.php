@@ -1,6 +1,6 @@
 <?php
 
-use GreenSpot\Utils\FormTagBinder;
+use Tanuki\Utils\FormTagBinder;
 use Tanuki\Form;
 
 function h($str) {

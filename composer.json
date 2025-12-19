@@ -5,7 +5,7 @@
         "php": ">=8.2",
         "tanuki-form/tanuki-core": "^0.1.14",
         "tanuki-form/tanuki-mail-sender-handler": "^0.1",
-        "green-spot/formtagbinder": "^1.1"
+        "tanuki-form/formtagbinder": "^1.1"
     },
     "minimum-stability": "beta",
     "prefer-stable": true

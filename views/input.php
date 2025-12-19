@@ -1,7 +1,7 @@
 <?php
 /**
  * @var Tanuki\Form $form
- * @var GreenSpot\Utils\FormTagBinder $binder
+ * @var Tanuki\Utils\FormTagBinder $binder
  */
 
 $errors = $form->getValidationErrors();
